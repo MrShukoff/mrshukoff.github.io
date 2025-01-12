@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0 auto;
+            width: 90%;
+            background-color: aqua;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            margin: 0;
+            position: relative;
+            background-color: white;
+        }
+
+        .main {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+
+        #center {
+            margin: 0;
+            display: inline-flex;
+            position: relative;
+            align-items: flex-start;
+            height: 100%;
+
+            overflow-y: auto;
+        }
+
+        #rightblock {
+            width: 50%;
+            background-color: brown;
+            margin: 0;
+        }
+
+        #leftblock {
+            background-color: blue;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            
+
+        }
+
+        #footer {
+            background-color: red;
+        }
+
+        #lipsum {
+            flex: 1 1 auto;
+            padding: 5px;
+        }
+
+        textarea{
+            
+            height: calc(100% - 5px);
+            width: calc(100% - 5px);
+            resize: none;
+        }
+    </style>
+
+    <title>Document</title>
+
+</head>
+
+<body class="light">
+    <div class="main">
+        <header>
+            <h1>hello</h1>
+        </header>
+        <div id="center">
+            <div id="leftblock">
+                <div id="lipsum">
+                    <textarea ></textarea>
+                </div>
+
+            </div>
+
+            <div id="rightblock">
+                <ul>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>three</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">
+            <h2>FOOTER</h2>
+        </div>
+
+
+
+    </div>
+</body>
+
+
+</html>
