@@ -49,7 +49,9 @@
             width: 50%;
             height: 100%;
             display: flex;
-            
+            flex-wrap: nowrap;
+            flex-direction: column;
+
 
         }
 
@@ -62,8 +64,8 @@
             padding: 5px;
         }
 
-        textarea{
-            
+        textarea {
+
             height: calc(100% - 5px);
             width: calc(100% - 5px);
             resize: none;
@@ -82,8 +84,9 @@
         <div id="center">
             <div id="leftblock">
                 <div id="lipsum">
-                    <textarea ></textarea>
+                    <textarea id="text"></textarea>
                 </div>
+                <button id="clickMe">скопировать</button>
 
             </div>
 
@@ -103,6 +106,14 @@
 
     </div>
 </body>
+<script lang="javascript">
 
+    document.getElementById("clickMe").addEventListener("click", () => {
+
+        navigator.clipboard.writeText(document.getElementById("text").value);
+
+    })
+
+</script>
 
 </html>
